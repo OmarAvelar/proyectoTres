@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Radium, {getState, keyframes, Style, StyleRoot} from 'radium';
+// import Radium, {getState, keyframes, Style, StyleRoot} from 'radium';
 import {style} from './style.js'
 
 import Panel from './panel';
@@ -14,12 +14,9 @@ class Dashboard extends Component {
     }
 
     return (
-      <StyleRoot>
-
       <div style={style.base}>
         {dimensionBlock}
       </div>
-      </StyleRoot>
 
     );
   }
@@ -27,7 +24,6 @@ class Dashboard extends Component {
   renderDimension(dimension) {
     const {actions, cf} = this.props;
     return (
-      <StyleRoot>
       <Panel key={dimension} name={dimension}>
         <AttributeExplorer key={dimension}
                            name={dimension}
@@ -36,7 +32,6 @@ class Dashboard extends Component {
                            group={cf.groups[dimension]}
                            onFilter={cf.onFilter}/>
       </Panel>
-      </StyleRoot>
     )
   }
 }

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Radium, {getState, keyframes, Style, StyleRoot} from 'radium';
+// import Radium, {getState, keyframes, Style, StyleRoot} from 'radium';
 import {style} from './style.js'
 
 class Dashboard extends Component {
   render() {
     const {name, children} = this.props;
     return (
-      <StyleRoot>
       <div style={style.base}>
         <div style={style.header.base}>
           <span style={style.header.text}>{name}</span>
@@ -15,7 +14,6 @@ class Dashboard extends Component {
           {children}
         </div>
       </div>
-      </StyleRoot>
     );
   }
 }
