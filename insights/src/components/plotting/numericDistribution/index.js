@@ -67,8 +67,8 @@ class NumericDistribution extends Component {
     const {margin, axes} = this.props.config;
     const {svg, plot, brush, brushSvg, xAxisEl, yAxisEl, xAxis, yAxis, x, y} = this.state;
 
-    svg.attr("width", width + margin.left + margin.right)
-      .attr("height", height + margin.top + margin.bottom);
+    svg.attr("width", width + margin.left + margin.right);
+      // .attr("height", height + margin.top + margin.bottom);
 
     plot.attr("width", width)
       .attr("height", height);
