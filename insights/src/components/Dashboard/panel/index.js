@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Radium from 'radium';
+// import Radium from 'radium';
 import {style} from './style.js'
 
 class Dashboard extends Component {

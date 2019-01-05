@@ -1,5 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import d3 from 'd3';
+import ReactDOM from 'react-dom';
+
 
 class NumericDistribution extends Component {
   constructor() {
@@ -17,8 +19,8 @@ class NumericDistribution extends Component {
 
   componentDidUpdate() {
     const {margin} = this.props.config;
-    const width  = React.findDOMNode(this.refs.plot).offsetWidth - margin.left - margin.right;
-    const height = React.findDOMNode(this.refs.plot).offsetHeight - margin.top - margin.bottom;
+    const width  = ReactDOM.findDOMNode(this.refs.plot).offsetWidth - margin.left - margin.right;
+    const height = ReactDOM.findDOMNode(this.refs.plot).offsetHeight - margin.top - margin.bottom;
     this.refreshPlot(width, height);
   }
 
@@ -28,13 +30,13 @@ class NumericDistribution extends Component {
 
   componentDidMount() {
     const {margin} = this.props.config;
-    const width    = React.findDOMNode(this.refs.plot).offsetWidth - margin.left - margin.right;
-    const height   = React.findDOMNode(this.refs.plot).offsetHeight - margin.top - margin.bottom;
+    const width    = ReactDOM.findDOMNode(this.refs.plot).offsetWidth - margin.left - margin.right;
+    const height   = ReactDOM.findDOMNode(this.refs.plot).offsetHeight - margin.top - margin.bottom;
     const x        = d3.scale.linear().range([0, width]);
     const y        = d3.scale.linear().range([height, 0]);
     const xAxis    = d3.svg.axis().scale(x).orient("bottom");
     const yAxis    = d3.svg.axis().scale(y).orient("left");
-    const svg      = d3.select(React.findDOMNode(this.refs.plot)).append("svg");
+    const svg      = d3.select(ReactDOM.findDOMNode(this.refs.plot)).append("svg");
     const plot     = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     const xAxisEl  = plot.append("g").attr("class", "x axis");
     const yAxisEl  = plot.append("g").attr("class", "y axis");
@@ -131,8 +133,8 @@ class NumericDistribution extends Component {
 
   handleResize = this._debounce(() => {
     const {margin} = this.props.config;
-    const width  = React.findDOMNode(this.refs.plot).offsetWidth - margin.left - margin.right;
-    const height = React.findDOMNode(this.refs.plot).offsetHeight - margin.top - margin.bottom;
+    const width  = ReactDOM.findDOMNode(this.refs.plot).offsetWidth - margin.left - margin.right;
+    const height = ReactDOM.findDOMNode(this.refs.plot).offsetHeight - margin.top - margin.bottom;
     this.refreshPlot(width, height);
   }, 150);
 

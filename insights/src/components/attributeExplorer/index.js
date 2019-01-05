@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import d3 from 'd3';
+import ReactDOM from 'react-dom';
 
 import NumericDistribution from '../plotting/numericDistribution';
 import OrdinalDistribution from '../plotting/ordinalDistribution';
@@ -107,8 +108,9 @@ class AttributeExplorer extends Component {
   }
 
   componentDidMount() {
+
     window.addEventListener('resize', this.handleResize.bind(this));
-    this.setState({width: React.findDOMNode(this.refs.content).offsetWidth});
+    this.setState({width: ReactDOM.findDOMNode(this.refs.content).offsetWidth});
   }
 
   componentWillUnmount() {
@@ -116,7 +118,8 @@ class AttributeExplorer extends Component {
   }
 
   handleResize() {
-    this.setState({width: React.findDOMNode(this.refs.content).offsetWidth});
+
+    this.setState({width: ReactDOM.findDOMNode(this.refs.content).offsetWidth});
   }
 
 
