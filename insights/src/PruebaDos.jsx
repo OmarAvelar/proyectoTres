@@ -31,7 +31,7 @@ export default class PruebaDos extends Component {
     return (
       <div>
         Holiiiiiiii Boliii
-        <App />
+        <Demo />
       </div>
     );
   }

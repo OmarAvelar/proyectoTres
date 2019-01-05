@@ -5,8 +5,8 @@ export const style = {
     display      : 'inline-block',
     verticalAlign: 'top',
 
-    '@media (min-width: 720px)' : {width: '50%'},
-    '@media (min-width: 1024px)' : {width: '33.33%'},
+    '@media (minWidth: 720px)' : {width: '50%'},
+    '@media (minWidth: 1024px)' : {width: '33.33%'},
   },
 
   header: {

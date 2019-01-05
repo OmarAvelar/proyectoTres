@@ -91,7 +91,7 @@ class NumericDistribution extends Component {
       .attr("x", 0)
       .attr("y", 10)
       .style("text-anchor", function (d, i) {
-        return (i == 0) ? "start" : (i == xAxis.ticks()[0]) ? "end" : "middle";
+        return (i === 0) ? "start" : (i === xAxis.ticks()[0]) ? "end" : "middle";
       });
     axes.y.show && yAxisEl.call(yAxis);
     this.renderSeries(width, height);

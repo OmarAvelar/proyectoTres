@@ -35,7 +35,7 @@ class Crossfilter extends Component {
   }
 
   handleFilter(data) {
-    if (data.clear || data.values.length == 0) {
+    if (data.clear || data.values.length === 0) {
       data.dimension.filterAll()
     } else if (data.ordinal) {
       data.dimension.filterFunction((d) => {
