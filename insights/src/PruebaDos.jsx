@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import BarChart from './BarChart';
+// import {BarChart} from 'react-dc';
 // import {Switch, Route} from 'react-router-dom'
 // import Home from './components/home/Home';
 // import Login from './components/auth/Login';
@@ -8,7 +10,13 @@ import React from 'react'
 // import All from './components/home/All';
 
 function PruebaDos() {
-  return <h1>Welcome JOeess!</h1>;
+  return (
+    
+    <div>
+
+      {/* <BarChart /> */}
+    </div>
+    );
 
 }
 
