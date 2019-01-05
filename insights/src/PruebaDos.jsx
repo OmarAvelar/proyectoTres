@@ -1,5 +1,5 @@
-import React from 'react';
-import BarChart from './BarChart';
+// import React from 'react';
+// import BarChart from './BarChart';
 // import {BarChart} from 'react-dc';
 // import {Switch, Route} from 'react-router-dom'
 // import Home from './components/home/Home';
@@ -9,15 +9,29 @@ import BarChart from './BarChart';
 // import Detail from './components/home/Detail';
 // import All from './components/home/All';
 
-function PruebaDos() {
-  return (
+// function PruebaDos() {
+//   return (
     
-    <div>
+//     <div>
+// Que hubbo
+//       {/* <BarChart /> */}
+//     </div>
+//     );
 
-      {/* <BarChart /> */}
-    </div>
+// }
+
+// export default PruebaDos
+
+import React, { Component } from 'react'
+import Demo from './containers/Demo';
+
+export default class PruebaDos extends Component {
+  render() {
+    return (
+      <div>
+        Holiiiiiiii Boliii
+        <Demo />
+      </div>
     );
-
+  }
 }
-
-export default PruebaDos
