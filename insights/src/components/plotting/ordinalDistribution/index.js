@@ -33,8 +33,8 @@ class OrdinalDistribution extends Component {
     const height  = ReactDOM.findDOMNode(this.refs.plot).offsetHeight - margin.top - margin.bottom;
     const x       = d3.scale.linear().range([0, width]);
     const y       = d3.scale.ordinal().rangeRoundBands([0, height], 0.1);
-    const xAxis   = d3.svg.axis().scale(x).orient("top").tickSize(5);
-    const yAxis   = d3.svg.axis().scale(y).orient("left").tickSize(5);
+    const xAxis   = d3.svg.axis().scale(x).orient("top").tickSize(2);
+    const yAxis   = d3.svg.axis().scale(y).orient("left").tickSize(2);
     const svg     = d3.select(ReactDOM.findDOMNode(this.refs.plot)).append("svg");
     const plot    = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     const xAxisEl = plot.append("g").attr("class", "x axis");
@@ -104,7 +104,7 @@ class OrdinalDistribution extends Component {
           if (isFilter || allFiltered) {
             return 'orange';
           } else if (noFilters) {
-            return 'steelblue';
+            return 'gray';
           } else if (!isFilter && !allFiltered) {
             return '#ddd';
           }

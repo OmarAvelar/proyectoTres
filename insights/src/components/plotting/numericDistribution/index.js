@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import d3 from 'd3';
 import ReactDOM from 'react-dom';
 
@@ -34,8 +34,8 @@ class NumericDistribution extends Component {
     const height   = ReactDOM.findDOMNode(this.refs.plot).offsetHeight - margin.top - margin.bottom;
     const x        = d3.scale.linear().range([0, width]);
     const y        = d3.scale.linear().range([height, 0]);
-    const xAxis    = d3.svg.axis().scale(x).orient("bottom");
-    const yAxis    = d3.svg.axis().scale(y).orient("left");
+    const xAxis    = d3.svg.axis().scale(x).orient("bottom").tickSize(2);
+    const yAxis    = d3.svg.axis().scale(y).orient("left").tickSize(2);
     const svg      = d3.select(ReactDOM.findDOMNode(this.refs.plot)).append("svg");
     const plot     = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
     const xAxisEl  = plot.append("g").attr("class", "x axis");

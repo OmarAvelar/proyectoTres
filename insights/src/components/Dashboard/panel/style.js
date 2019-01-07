@@ -1,12 +1,14 @@
 export const style = {
   base: {
     border       : '1px solid #ddd',
-    width        : '100%',
+    width        : '50%',
+    height       : '70%',
     display      : 'inline-block',
     verticalAlign: 'top',
 
     '@media (minWidth: 720px)' : {width: '50%'},
     '@media (minWidth: 1024px)' : {width: '33.33%'},
+    
   },
 
   header: {
@@ -25,5 +27,6 @@ export const style = {
       padding: '10px 10px',
       height : '250px'
     }
+    
   }
 };
