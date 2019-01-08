@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Dashboard from '../components/Dashboard';
 import Crossfilter from '../components/crossfilter';
-import titanic from '../data/titanic';
 import datitos from '../data/datitos'
 
 export default class DemoDos extends Component {
@@ -10,7 +9,7 @@ export default class DemoDos extends Component {
     const attributes = [
       {
         type     : 'linear',
-        name     : 'Mes',
+        name     : 'Ventas por Mes',
         dimension: row => +row.mes
       },
       {
@@ -39,7 +38,7 @@ export default class DemoDos extends Component {
         dimension: row => row.vendio
       },
       {
-        type     : 'linear',
+        type     : 'ordinal',
         name     : 'Ventas totales',
         dimension: row => +row.total
       }

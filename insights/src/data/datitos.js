@@ -11,7 +11,7 @@ const data = [
     "ticket"   : "24160 L221",
     "quarter"     : "1",
     "sex"      : "mujer",
-    "total"    : "30",
+    "total"    : "30000",
     "producto"    : "Queso"
   },
   {
@@ -26,13 +26,13 @@ const data = [
     "ticket"   : "",
     "quarter"     : "1",
     "sex"      : "hombre",
-    "total"    : "25",
+    "total"    : "25000",
     "producto"    : "Vino"
   },
   {
     "row.names": 1313,
     "calidad"   : "3rd",
-    "vendio" : "si",
+    "vendio" : "no",
     "name"     : "Leo",
     "mes"      : "11.000",
     "embarked" : "",
@@ -41,7 +41,7 @@ const data = [
     "ticket"   : "",
     "quarter"     : "3",
     "sex"      : "hombre",
-    "total"    : "10",
+    "total"    : "10000",
     "producto"    : "Pan"
   },
   {
@@ -56,7 +56,7 @@ const data = [
     "ticket"   : "24160 L221",
     "quarter"     : "1",
     "sex"      : "mujer",
-    "total"    : "16",
+    "total"    : "10000",
     "producto"    : "Queso"
   },
   {
@@ -71,7 +71,7 @@ const data = [
     "ticket"   : "",
     "quarter"     : "1",
     "sex"      : "hombre",
-    "total"    : "26",
+    "total"    : "25000",
     "producto"    : "Queso"
   },
   {
@@ -86,7 +86,7 @@ const data = [
     "ticket"   : "",
     "quarter"     : "2",
     "sex"      : "hombre",
-    "total"    : "22",
+    "total"    : "25000",
     "producto"    : "Queso"
   },
   {
@@ -101,7 +101,7 @@ const data = [
     "ticket"   : "24160 L221",
     "quarter"     : "2",
     "sex"      : "mujer",
-    "total"    : "36",
+    "total"    : "35000",
     "producto"    : "Queso"
   },
   {
@@ -116,7 +116,7 @@ const data = [
     "ticket"   : "",
     "quarter"     : "2",
     "sex"      : "mujer",
-    "total"    : "7",
+    "total"    : "5000",
     "producto"    : "Queso"
   },
   {
@@ -131,7 +131,7 @@ const data = [
     "ticket"   : "",
     "quarter"     : "2",
     "sex"      : "hombre",
-    "total"    : "12",
+    "total"    : "15000",
     "producto"    : "Queso"
   },
   {
@@ -146,22 +146,22 @@ const data = [
     "ticket"   : "24160 L221",
     "quarter"     : "3",
     "sex"      : "mujer",
-    "total"    : "29",
-    "producto"    : "Queso"
+    "total"    : "25000",
+    "producto"    : "Vino"
   },
   {
     "row.names": 1312,
     "calidad"   : "2nd",
     "vendio" : "si",
     "name"     : "Rene",
-    "mes"      : "10.0000",
+    "mes"      : "1.0000",
     "embarked" : "",
     "home.dest": "",
     "room"     : "",
     "ticket"   : "",
-    "quarter"     : "3",
+    "quarter"     : "1",
     "sex"      : "hombre",
-    "total"    : "18",
+    "total"    : "20000",
     "producto"    : "Queso"
   },
   {
@@ -169,14 +169,14 @@ const data = [
     "calidad"   : "3rd",
     "vendio" : "si",
     "name"     : "Leo",
-    "mes"      : "12.000",
+    "mes"      : "2.000",
     "embarked" : "",
     "home.dest": "",
     "room"     : "",
     "ticket"   : "",
-    "quarter"     : "3",
+    "quarter"     : "1",
     "sex"      : "hombre",
-    "total"    : "3",
+    "total"    : "5000",
     "producto"    : "Queso"
   },
   {
@@ -191,7 +191,7 @@ const data = [
     "ticket"   : "",
     "quarter"     : "1",
     "sex"      : "hombre",
-    "total"    : "5",
+    "total"    : "5000",
     "producto"    : "Queso"
   },
   {
@@ -206,7 +206,7 @@ const data = [
     "ticket"   : "",
     "quarter"     : "3",
     "sex"      : "hombre",
-    "total"    : "30",
+    "total"    : "30000",
     "producto"    : "Pan"
   },
   {
@@ -214,20 +214,20 @@ const data = [
     "calidad"   : "1st",
     "vendio" : "si",
     "name"     : "Marcelino",
-    "mes"      : "2.0000",
+    "mes"      : "6.0000",
     "embarked" : "Southampton",
     "home.dest": "St Louis, MO",
     "room"     : "B-5",
     "ticket"   : "24160 L221",
-    "quarter"     : "1",
+    "quarter"     : "2",
     "sex"      : "hombre",
-    "total"    : "12",
+    "total"    : "15000",
     "producto"    : "Vino"
   },
   {
     "row.names": 1313,
     "calidad"   : "3rd",
-    "vendio" : "no",
+    "vendio" : "si",
     "name"     : "Javi",
     "mes"      : "12.000",
     "embarked" : "",
@@ -236,8 +236,8 @@ const data = [
     "ticket"   : "",
     "quarter"     : "3",
     "sex"      : "hombre",
-    "total"    : "NA",
-    "producto"    : "NA"
+    "total"    : "45000",
+    "producto"    : "Vino"
   },
   {
     "row.names": 1313,
@@ -251,8 +251,8 @@ const data = [
     "ticket"   : "",
     "quarter"     : "1",
     "sex"      : "hombre",
-    "total"    : "NA",
-    "producto"    : "NA"
+    "total"    : "15000",
+    "producto"    : "Pan"
   }
 ]
 

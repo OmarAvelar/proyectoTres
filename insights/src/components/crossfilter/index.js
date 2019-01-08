@@ -45,8 +45,6 @@ class Crossfilter extends Component {
       data.dimension.filter(data.values);
     }
 
-    /* this is my shortcut to force re-rendering
-    I should probably make it better. */
     this.setState({ts: Date.now()});
   }
 

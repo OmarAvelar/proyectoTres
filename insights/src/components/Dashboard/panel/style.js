@@ -26,7 +26,23 @@ export const style = {
     base: {
       padding: '10px 50px',
       height : '250px'
-    }
+    },
     
   }
 };
+
+
+// content: {
+//   base: {
+//     padding: '10px 30px',
+//     height : '250px',
+//     firstChild: {
+//       padding: '10px 80px',
+//       height : '250px',
+    
+//   },
+  
+
+//   }
+  
+// }
