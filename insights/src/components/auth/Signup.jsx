@@ -45,9 +45,7 @@ export default class Signup extends Component {
             <Link to="/" className="navbar-item">
                 Insights Trqacker
             </Link>
-            <Link to="/" className="navbar-item">
-                Home
-            </Link>
+           
 
             </div>
 

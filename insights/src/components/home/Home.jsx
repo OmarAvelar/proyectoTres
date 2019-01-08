@@ -38,9 +38,7 @@ export default class Home extends Component {
                 <Link to="/" className="navbar-item">
                     Insights Tracker
                 </Link>
-                <Link to="/" className="navbar-item">
-                    Home
-                </Link>
+               
 
                 </div>
 

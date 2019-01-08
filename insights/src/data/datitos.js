@@ -42,7 +42,7 @@ const data = [
     "quarter"     : "3",
     "sex"      : "hombre",
     "total"    : "10000",
-    "producto"    : "Pan"
+    "producto"    : "Huevo"
   },
   {
     "row.names": 1,
@@ -207,7 +207,7 @@ const data = [
     "quarter"     : "3",
     "sex"      : "hombre",
     "total"    : "30000",
-    "producto"    : "Pan"
+    "producto"    : "Vino"
   },
   {
     "row.names": 1,
@@ -252,6 +252,51 @@ const data = [
     "quarter"     : "1",
     "sex"      : "hombre",
     "total"    : "15000",
+    "producto"    : "Jamon"
+  },
+  {
+    "row.names": 1313,
+    "calidad"   : "3rd",
+    "vendio" : "no",
+    "name"     : "Allen",
+    "mes"      : "4",
+    "embarked" : "",
+    "home.dest": "",
+    "room"     : "",
+    "ticket"   : "",
+    "quarter"     : "1",
+    "sex"      : "mujer",
+    "total"    : "10000",
+    "producto"    : "Jamon"
+  },
+  {
+    "row.names": 1313,
+    "calidad"   : "3rd",
+    "vendio" : "no",
+    "name"     : "Allen",
+    "mes"      : "4",
+    "embarked" : "",
+    "home.dest": "",
+    "room"     : "",
+    "ticket"   : "",
+    "quarter"     : "1",
+    "sex"      : "mujer",
+    "total"    : "20000",
+    "producto"    : "Huevo"
+  },
+  {
+    "row.names": 1313,
+    "calidad"   : "3rd",
+    "vendio" : "no",
+    "name"     : "Marcelino",
+    "mes"      : "4",
+    "embarked" : "",
+    "home.dest": "",
+    "room"     : "",
+    "ticket"   : "",
+    "quarter"     : "1",
+    "sex"      : "hombre",
+    "total"    : "10000",
     "producto"    : "Pan"
   }
 ]

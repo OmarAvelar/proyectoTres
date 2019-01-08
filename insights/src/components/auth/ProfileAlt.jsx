@@ -4,6 +4,7 @@ import {getProfile} from '../../services/auth'
 import Prueba from '../../Prueba';
 import PruebaDos from '../../PruebaDos';
 import PruebaTres from '../../PruebaTres';
+import PruebaAlt from '../../PruebaAlt';
 
  class ProfilePage extends Component {
 
@@ -31,7 +32,7 @@ import PruebaTres from '../../PruebaTres';
           return <Prueba />;
         }
         if (user.name === "Joe") {
-        return <PruebaDos />;
+        return <PruebaAlt />;
       } else {
         return <PruebaTres />;
       } 
@@ -146,17 +147,16 @@ import PruebaTres from '../../PruebaTres';
                <div className="media">
     
                <div className="media-content">
-                   <p className="title is-4">Usuario: {user.name} </p>
+               <p className="title is-4">Usuario: {user.name} </p>
                    <p className="title is-4">Email: {user.email} </p>
                    <p className="title is-4">Empresa: Rancho Peludo </p>
-
                    <Greeting />
                </div>
                </div>
            </div>
            </div>
        </div>
-   
+    
         )
         
           } else {
@@ -222,7 +222,6 @@ import PruebaTres from '../../PruebaTres';
          
 
       }
-      
   }
 }
 export default ProfilePage
