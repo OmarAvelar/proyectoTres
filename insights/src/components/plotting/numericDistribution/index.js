@@ -34,7 +34,7 @@ class NumericDistribution extends Component {
     const height   = ReactDOM.findDOMNode(this.refs.plot).offsetHeight - margin.top - margin.bottom;
     const x        = d3.scale.linear().range([0, width]);
     const y        = d3.scale.linear().range([height, 0]);
-    const xAxis    = d3.svg.axis().scale(x).orient("bottom").tickSize(2);
+    const xAxis    = d3.svg.axis().scale(x).orient("bottom").tickSize(2).ticks(6);
     const yAxis    = d3.svg.axis().scale(y).orient("left").tickSize(2);
     const svg      = d3.select(ReactDOM.findDOMNode(this.refs.plot)).append("svg");
     const plot     = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -76,7 +76,7 @@ class NumericDistribution extends Component {
     x.range([0, width]);
     y.range([height, 0]);
 
-    x.domain([axes.x.min, axes.x.max]);
+    x.domain([1, axes.x.max+.5]);
     y.domain([axes.y.min, axes.y.max]);
 
     brushSvg
