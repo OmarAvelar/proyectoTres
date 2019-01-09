@@ -32,6 +32,8 @@ class AttributeExplorer extends Component {
 
 
     let configuration = {};
+
+    //dependiendo del tipo, escoge alguna forma de graficar, numerocamente o nominal
     switch (type) {
       case 'linear':
         configuration = {

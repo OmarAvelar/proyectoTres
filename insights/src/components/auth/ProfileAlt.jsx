@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import {getProfile} from '../../services/auth'
 import Prueba from '../../Prueba';
-import PruebaDos from '../../PruebaDos';
-import PruebaTres from '../../PruebaTres';
-import PruebaAlt from '../../PruebaAlt';
+import Front from '../../Front';
+import UserNo from '../../UserNo';
+import Back from '../../Back';
 
  class ProfilePage extends Component {
 
@@ -32,9 +32,9 @@ import PruebaAlt from '../../PruebaAlt';
           return <Prueba />;
         }
         if (user.name === "Joe") {
-        return <PruebaAlt />;
+        return <Back />;
       } else {
-        return <PruebaTres />;
+        return <UserNo />;
       } 
     }
 
@@ -181,25 +181,11 @@ import PruebaAlt from '../../PruebaAlt';
                <Link to="/" className="navbar-item">
                    Insights Tracker
                </Link>
-               <Link to="/" className="navbar-item">
-                   Logout
-               </Link>
-    
+             
                </div>
     
             
-               <div className="navbar-end">
-               <div className="navbar-item">
-                   <div className="buttons">
-                   <Link to="/signup" className="button is-light">
-                       <strong>Sign up</strong>
-                   </Link>
-                   <Link to="/login" className="button is-light">
-                       Log in
-                   </Link>
-                   </div>
-               </div>
-               </div>
+              
     
            </div>
            </nav>

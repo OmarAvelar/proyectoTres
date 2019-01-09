@@ -196,9 +196,8 @@
 
 import React, { Component } from 'react'
 import Demo from './containers/Demo';
-import App from './containers/App';
 
-export default class PruebaDos extends Component {
+export default class Prueba extends Component {
   render() {
     return (
       <div>

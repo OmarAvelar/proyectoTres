@@ -43,7 +43,7 @@ export default class Signup extends Component {
         <div id="navbarBasicExample" className="navbar-menu">
             <div className="navbar-start">
             <Link to="/" className="navbar-item">
-                Insights Trqacker
+                Insights Tracker
             </Link>
            
 
@@ -68,14 +68,14 @@ export default class Signup extends Component {
         <div className="field">
         <label className="label">Username</label>
         <div className="control">
-            <input onChange={handleText} name="name" className="input" type="text" placeholder="R2-D2"/>
+            <input onChange={handleText} name="name" className="input" type="text" placeholder="Bartolo"/>
         </div>
         </div>
 
         <div className="field">
         <label className="label">Email</label>
         <div className="control has-icons-left has-icons-right">
-            <input onChange={handleText} name="email" className="input" type="email" placeholder="darthVader@gmail.com"/>
+            <input onChange={handleText} name="email" className="input" type="email" placeholder="bartolo@gmail.com"/>
         </div>
         </div>
 
@@ -83,6 +83,13 @@ export default class Signup extends Component {
         <label className="label">Password</label>
         <div className="control has-icons-left has-icons-right">
             <input onChange={handleText} name="password" className="input" type="password"/>
+        </div>
+        </div>
+
+        <div className="field">
+        <label className="label">Sube tus datos</label>
+        <div className="control has-icons-left has-icons-right">
+        <input type="file" name="pic" accept=".json,.csv,.xls" />
         </div>
         </div>
 

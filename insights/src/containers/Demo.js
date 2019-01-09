@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Dashboard from '../components/Dashboard';
 import Crossfilter from '../components/crossfilter';
-import titanic from '../data/titanic';
+import prueba from '../data/prueba';
 
 export default class Demo extends Component {
   render() {
@@ -41,7 +41,7 @@ export default class Demo extends Component {
 
     return (
       <div>
-        <Crossfilter data={titanic} attributes={attributes}>
+        <Crossfilter data={prueba} attributes={attributes}>
           <Dashboard />
         </Crossfilter>
       </div>

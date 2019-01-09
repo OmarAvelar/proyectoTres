@@ -5,6 +5,7 @@ import Routes from '../src/Routes'
 class App extends Component {
   render() {
     return (
+      //routes
       <div>
         <Routes/>
       </div>

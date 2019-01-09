@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 
 import DashboardAlt from '../components/DashboardAlt';
 import Crossfilter from '../components/crossfilter';
-import datitosAlt from '../data/datitosAlt'
+import animales from '../data/animales'
 
-export default class DemoAlt extends Component {
+export default class BackContainer extends Component {
   render() {
     const attributes = [
       {
@@ -31,7 +31,7 @@ export default class DemoAlt extends Component {
 
     return (
       <div>
-        <Crossfilter data={datitosAlt} attributes={attributes}>
+        <Crossfilter data={animales} attributes={attributes}>
           <DashboardAlt />
         </Crossfilter>
       </div>

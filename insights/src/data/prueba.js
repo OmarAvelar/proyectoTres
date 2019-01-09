@@ -17070,7 +17070,7 @@ const data = [
   }
 ]
 
-const titanic = data.map(record => {
+const prueba = data.map(record => {
   return {
     ...record,
     age : (record.age === 'NA' ? null : +record.age),
@@ -17078,4 +17078,4 @@ const titanic = data.map(record => {
   };
 });
 
-export default titanic;
+export default prueba;

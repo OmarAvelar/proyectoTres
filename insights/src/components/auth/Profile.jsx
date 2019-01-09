@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import {getProfile} from '../../services/auth'
 import Prueba from '../../Prueba';
-import PruebaDos from '../../PruebaDos';
-import PruebaTres from '../../PruebaTres';
+import Front from '../../Front';
+import UserNo from '../../UserNo';
 
  class ProfilePage extends Component {
 
@@ -31,9 +31,9 @@ import PruebaTres from '../../PruebaTres';
           return <Prueba />;
         }
         if (user.name === "Joe") {
-        return <PruebaDos />;
+        return <Front />;
       } else {
-        return <PruebaTres />;
+        return <UserNo />;
       } 
     }
 
@@ -181,25 +181,12 @@ import PruebaTres from '../../PruebaTres';
                <Link to="/" className="navbar-item">
                    Insights Tracker
                </Link>
-               <Link to="/" className="navbar-item">
-                   Logout
-               </Link>
+              
     
                </div>
     
             
-               <div className="navbar-end">
-               <div className="navbar-item">
-                   <div className="buttons">
-                   <Link to="/signup" className="button is-light">
-                       <strong>Sign up</strong>
-                   </Link>
-                   <Link to="/login" className="button is-light">
-                       Log in
-                   </Link>
-                   </div>
-               </div>
-               </div>
+              
     
            </div>
            </nav>
@@ -208,8 +195,8 @@ import PruebaTres from '../../PruebaTres';
                <div className="media">
     
                <div className="media-content">
-                   <p className="title is-4">Name: {user.name} </p>
-                   <p className="title is-4">Email: {user.email} </p>
+                   <p className="title is-4">{user.name} </p>
+                   <p className="title is-4">{user.email} </p>
                    <Greeting />
                </div>
                </div>

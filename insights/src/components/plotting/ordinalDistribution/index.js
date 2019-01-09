@@ -104,7 +104,7 @@ class OrdinalDistribution extends Component {
           if (isFilter || allFiltered) {
             return 'orange';
           } else if (noFilters) {
-            return 'gray';
+            return 'steelblue';
           } else if (!isFilter && !allFiltered) {
             return '#ddd';
           }

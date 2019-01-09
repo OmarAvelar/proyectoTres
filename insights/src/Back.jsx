@@ -1,16 +1,14 @@
 import React, { Component } from 'react'
-import Demo from './containers/Demo';
-import App from './containers/App';
 import {Link} from 'react-router-dom'
 
-import DemoAlt from './containers/DemoAlt';
+import BackContainer from './containers/BackContainer';
 
-export default class PruebaAlt extends Component {
+export default class Back extends Component {
   render() {
     return (
       <div>
         <img src="https://www.mirancho.com/wp-content/themes/mirancho/library/images/logo-footer.png" alt=""/>
-        <DemoAlt />
+        <BackContainer />
 
         <div className="buttons">
     <Link to="/profile" className="button is-light">

@@ -7,6 +7,8 @@ class Crossfilter extends Component {
     this.state = {};
   }
 
+  //crossfilter y dc generan datasets alternativos que son los que se plotean
+
   componentWillMount() {
     const { data, attributes} = this.props;
     const cfData         = crossfilter(data);
@@ -48,6 +50,8 @@ class Crossfilter extends Component {
     this.setState({ts: Date.now()});
   }
 
+  //renderiza el hijo que en este caso es el subset del dataset principal,
+  // que despues se mapea para graficar
   render() {
     const {children} = this.props;
 

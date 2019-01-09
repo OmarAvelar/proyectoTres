@@ -71,7 +71,7 @@ export default class Login extends Component {
         <div className="field">
         <label className="label">Email</label>
         <div className="control has-icons-left has-icons-right">
-            <input onChange={handleText} className="input" name="email" type="email" placeholder="darthVader@gmail.com"/>
+            <input onChange={handleText} className="input" name="email" type="email" placeholder="bartolo@gmail.com"/>
         </div>
         </div>
 

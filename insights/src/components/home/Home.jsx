@@ -7,14 +7,6 @@ export default class Home extends Component {
         data: {}
     }
     
-    // componentDidMount(){
-    //     todayPhoto()
-    //     .then(r=> {
-    //         console.log(r)
-    //         this.setState({data:r})
-    //     })
-    //     .catch(e=>console.log(e))
-    // }
 
     render() {
         const {data} = this.state
