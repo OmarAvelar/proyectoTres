@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import {getProfile} from '../../services/auth'
-import Prueba from '../../Prueba';
+// import Prueba from '../../Prueba';
 import Front from '../../Front';
 import UserNo from '../../UserNo';
 
@@ -26,9 +26,9 @@ import UserNo from '../../UserNo';
     const {user} = this.state
     //conditions
     function Greeting(props) {
-        const isLoggedIn = props.isLoggedIn;
+        // const isLoggedIn = props.isLoggedIn;
         if (user.name === "Omar") {
-          return <Prueba />;
+          return <UserNo />;
         }
         if (user.name === "Joe") {
         return <Front />;
@@ -195,8 +195,8 @@ import UserNo from '../../UserNo';
                <div className="media">
     
                <div className="media-content">
-                   <p className="title is-4">{user.name} </p>
-                   <p className="title is-4">{user.email} </p>
+                   {/* <p className="title is-4">{user.name} </p>
+                   <p className="title is-4">{user.email} </p> */}
                    <Greeting />
                </div>
                </div>

@@ -27,6 +27,10 @@ export const style = {
       padding: '10px 50px',
       height : '250px'
     },
+    text: {
+      fontSize  : '1em',
+      fontWeight: '300'
+    }
     
   }
 };

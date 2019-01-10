@@ -41,6 +41,7 @@ class AttributeExplorer extends Component {
           axes  : {
             x: {
               show: true,
+              size: 1,
               min : 0,
               max : d3.max(this.props.group.all().map(d => d.key))
             },
@@ -67,7 +68,7 @@ class AttributeExplorer extends Component {
 
       case 'ordinal':
         configuration = {
-          margin: {top: 20, right: 5, bottom: 5, left: 50},
+          margin: {top: 20, right: 25, bottom: 10, left: 80},
           axes  : {
             x: {
               show: true,

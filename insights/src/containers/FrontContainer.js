@@ -8,7 +8,7 @@ export default class FrontContainer extends Component {
   render() {
     const attributes = [
       {
-        type     : 'linear',
+        type     : 'ordinal',
         name     : 'Ventas por Mes',
         dimension: row => +row.mes
       },

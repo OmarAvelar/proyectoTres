@@ -11,7 +11,7 @@ class OrdinalDistribution extends Component {
 
   render() {
     return (
-      <div ref="plot" style={{height: '100%'}}>
+      <div ref="plot" style={{height: '100%', width:'90%'}}>
       </div>
     );
   }

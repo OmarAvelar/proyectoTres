@@ -26,6 +26,7 @@ export const style = {
     base: {
       padding: '10px 50px',
       height : '250px'
+      
     },
     
   }

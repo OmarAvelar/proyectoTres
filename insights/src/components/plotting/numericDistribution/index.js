@@ -12,7 +12,7 @@ class NumericDistribution extends Component {
 
   render() {
     return (
-      <div ref="plot" style={{height: '100%'}}>
+      <div ref="plot" style={{height: '100%', color: 'green'}}>
       </div>
     );
   }
