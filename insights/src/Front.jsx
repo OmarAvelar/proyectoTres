@@ -5,8 +5,8 @@ import FrontContainer from './containers/FrontContainer';
 export default class Front extends Component {
   render() {
     return (
-      <div>
-        <img src="https://www.mirancho.com/wp-content/themes/mirancho/library/images/logo-footer.png" alt=""/>
+      <div >
+        <img src="rancho.png" alt=""/>
         <FrontContainer />
        
         <div className="buttons">

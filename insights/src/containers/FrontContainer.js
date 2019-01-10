@@ -45,7 +45,7 @@ export default class FrontContainer extends Component {
     ];
 
     return (
-      <div>
+      <div >
         <Crossfilter data={ventas} attributes={attributes}>
           <Dashboard />
         </Crossfilter>

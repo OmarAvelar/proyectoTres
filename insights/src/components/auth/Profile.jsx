@@ -104,7 +104,7 @@ import UserNo from '../../UserNo';
     
         return (
             
-            <div>
+            <div style={{backgroundColor:"#444"}}>
             <nav className="navbar" role="navigation" aria-label="main navigation">
            <div className="navbar-brand">
                <Link to="/" className="navbar-item" >
@@ -146,8 +146,8 @@ import UserNo from '../../UserNo';
                <div className="media">
     
                <div className="media-content">
-                   <p className="title is-4">Usuario: {user.name} </p>
-                   <p className="title is-4">Email: {user.email} </p>
+                   {/* <p className="title is-4">Usuario: {user.name} </p>
+                   <p className="title is-4">Email: {user.email} </p> */}
                    <p className="title is-4">Empresa: Rancho Peludo </p>
 
                    <Greeting />

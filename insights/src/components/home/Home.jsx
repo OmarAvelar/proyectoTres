@@ -22,9 +22,9 @@ export default class Home extends Component {
 
         const {data} = this.state
     return (
-      <div >
+      <div style={{backgroundColor:"#444"}}>
 
-       <nav className="navbar" role="navigation" aria-label="main navigation" style={{backgroundColor:"black"}}>
+       <nav className="navbar" role="navigation" aria-label="main navigation" style={{backgroundColor:"#333"}}>
             <div className="navbar-brand" >
                 <Link to="/" className="navbar-item" >
                 <img src="/logo.png" alt="Logo"/>
@@ -40,7 +40,7 @@ export default class Home extends Component {
             <div id="navbarBasicExample" className="navbar-menu" >
                 <div className="navbar-start">
                 <Link to="/" className="navbar-item">
-                    Insights Tracker
+                   <h1 style={{color:"white", fontSize:"25px"}}> Insights Tracker </h1>
                 </Link>
                
 
@@ -64,13 +64,12 @@ export default class Home extends Component {
             <div style={{width:"100%", display:"flex", flexDirection:"row", flexWrap:"wrap", justifyContent:"center", alignItems:"center"}}>
 
 
-        <div className="field"  style={{backgroundColor:"black", width:"60%", padding:"60px", minWidth:"500px",justifyContent:"center", alignItems:"center"}}>
+        <div className="field"  style={{width:"60%", padding:"60px", minWidth:"500px",justifyContent:"center", alignItems:"center", backgroundColor:"#333"}}>
         <div >
         <Carousel autoplay>
-        <div><h3><img className="d-block w-100" src="https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/7/d7/7d726c5e-ecf5-11e8-a6bb-73a2eaa0687c/5bf45826ede21.image.jpg" alt="First slide"/></h3></div>
-        <div><h3><img className="d-block w-100" src="https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/7/d7/7d726c5e-ecf5-11e8-a6bb-73a2eaa0687c/5bf45826ede21.image.jpg" alt="First slide"/></h3></div>
-        <div><h3><img className="d-block w-100" src="https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/7/d7/7d726c5e-ecf5-11e8-a6bb-73a2eaa0687c/5bf45826ede21.image.jpg" alt="First slide"/></h3></div>
-        <div><h3><img className="d-block w-100" src="https://bloximages.newyork1.vip.townnews.com/gazette.com/content/tncms/assets/v3/editorial/7/d7/7d726c5e-ecf5-11e8-a6bb-73a2eaa0687c/5bf45826ede21.image.jpg" alt="First slide"/></h3></div>
+        <div><h3><img className="d-block w-100" src="/registrate.png" alt="First slide"/></h3></div>
+        <div><h3><img className="d-block w-100" src="/explora.png" alt="First slide"/></h3></div>
+        <div><h3><img className="d-block w-100" src="/descubre.png" alt="First slide"/></h3></div>
          </Carousel>
          </div>
          </div>
@@ -79,7 +78,7 @@ export default class Home extends Component {
 
       
 
-      <div style={{justifyContent:"space-around", display: "flex", flexDirection: "row", width:"40%", minWidth:"200px",alignItems:"center"}}>
+      <div style={{justifyContent:"space-around", display: "flex", flexDirection: "row", width:"40%", minWidth:"200px",alignItems:"center",padding:"40px"}}>
 
             <img src="/banner.png" style={{minWidth:"20%"}}/>
 

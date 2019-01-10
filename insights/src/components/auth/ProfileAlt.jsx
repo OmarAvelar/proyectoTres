@@ -48,7 +48,7 @@ import Back from '../../Back';
     return (
         
         <div>
-        <nav className="navbar" role="navigation" aria-label="main navigation">
+        <nav className="navbar" role="navigation" aria-label="main navigation" >
        <div className="navbar-brand">
            <Link to="/" className="navbar-item" >
            <img src="/logo.png" alt="Logo"/>
@@ -105,7 +105,7 @@ import Back from '../../Back';
     
         return (
             
-            <div>
+            <div >
             <nav className="navbar" role="navigation" aria-label="main navigation">
            <div className="navbar-brand">
                <Link to="/" className="navbar-item" >
@@ -147,8 +147,8 @@ import Back from '../../Back';
                <div className="media">
     
                <div className="media-content">
-               <p className="title is-4">Usuario: {user.name} </p>
-                   <p className="title is-4">Email: {user.email} </p>
+               {/* <p className="title is-4">Usuario: {user.name} </p>
+                   <p className="title is-4">Email: {user.email} </p> */}
                    <p className="title is-4">Empresa: Rancho Peludo </p>
                    <Greeting />
                </div>
