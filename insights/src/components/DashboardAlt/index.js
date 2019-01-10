@@ -22,7 +22,7 @@ class DashboardAlt extends Component {
   }
 
   renderDimension(dimension) {
-    const {actions, cf} = this.props;
+    const {cf} = this.props;
     return (
       <Panel key={dimension} name={dimension}>
         <AttributeExplorer key={dimension}

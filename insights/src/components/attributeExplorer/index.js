@@ -96,6 +96,7 @@ class AttributeExplorer extends Component {
             height={group.size()*50}
             config={configuration}/>
         );
+        default: break;
     }
   }
 
@@ -107,6 +108,7 @@ class AttributeExplorer extends Component {
       case 'ordinal':
         this.setState({filter: data.values});
         break;
+        default:break;
     }
   }
 

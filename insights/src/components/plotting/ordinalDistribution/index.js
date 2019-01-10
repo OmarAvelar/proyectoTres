@@ -1,4 +1,4 @@
-import React, { PropTypes, Component } from 'react';
+import React, { Component } from 'react';
 import d3 from 'd3';
 import ReactDOM from 'react-dom';
 

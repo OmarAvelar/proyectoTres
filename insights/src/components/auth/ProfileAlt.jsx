@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import {getProfile} from '../../services/auth'
 // import Prueba from '../../Prueba';
-import Front from '../../Front';
+// import Front from '../../Front';
 import UserNo from '../../UserNo';
 import Back from '../../Back';
 
@@ -27,11 +27,11 @@ import Back from '../../Back';
     const {user} = this.state
     //conditions
     function Greeting(props) {
-        const isLoggedIn = props.isLoggedIn;
+        // const isLoggedIn = props.isLoggedIn;
         if (user.name === "Omar") {
           return <UserNo />;
         }
-        if (user.name === "Joe") {
+        if (user.name === "Rancho") {
         return <Back />;
       } else {
         return <UserNo />;
@@ -100,7 +100,7 @@ import Back from '../../Back';
 
     )
     
-      } if (user.name === "Joe") {
+      } if (user.name === "Rancho") {
         
     
         return (

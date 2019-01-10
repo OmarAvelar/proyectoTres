@@ -30,7 +30,7 @@ import UserNo from '../../UserNo';
         if (user.name === "Omar") {
           return <UserNo />;
         }
-        if (user.name === "Joe") {
+        if (user.name === "Rancho") {
         return <Front />;
       } else {
         return <UserNo />;
@@ -99,7 +99,7 @@ import UserNo from '../../UserNo';
 
     )
     
-      } if (user.name === "Joe") {
+      } if (user.name === "Rancho") {
         
     
         return (

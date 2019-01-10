@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import bulma from 'bulma'
 import { Carousel } from 'antd';
 
 
@@ -16,11 +15,8 @@ export default class Home extends Component {
     //bw nav https://cmkt-image-prd.global.ssl.fastly.net/0.1.0/ps/284576/580/545/m1/fpnw/wm0/1409.m00.i004.n008.p.c24.204370654-hand-drawn-business-charts-for-finance-statistics-and-doodle-infographics-.jpg?1419927953&s=6fab0f3080bd866ddf2b8b6f6353bf11
     render() {
        
-        function onChange(a, b, c) {
-            console.log(a, b, c);
-          }
+        
 
-        const {data} = this.state
     return (
       <div style={{backgroundColor:"#444"}}>
 
@@ -80,7 +76,7 @@ export default class Home extends Component {
 
       <div style={{justifyContent:"space-around", display: "flex", flexDirection: "row", width:"40%", minWidth:"200px",alignItems:"center",padding:"40px"}}>
 
-            <img src="/banner.png" style={{minWidth:"20%"}}/>
+            <img src="/banner.png" alt="" style={{minWidth:"20%"}}/>
 
             <img src="/bannerDos.png" alt="" style={{minWidth:"20%"}}/>
         </div>
