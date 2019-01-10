@@ -24,7 +24,7 @@ export default class BackContainer extends Component {
       },
       {
         type     : 'ordinal',
-        name     : 'Produccion',
+        name     : 'Producción',
         dimension: row => +row.produccion // heh
       }
     ];
